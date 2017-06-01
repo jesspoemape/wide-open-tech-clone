@@ -1,0 +1,243 @@
+/* mobile styles first */
+html {
+    font-size: 16px;
+}
+.main-header {
+    width: 100%;
+    height: 80px;
+    padding: 0 16px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.logo {
+    width: 50px;
+}
+.main-nav {
+    display: none;
+    width: 400px;
+    align-items: center;
+}
+.main-nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: gray;
+}
+li {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.ham {
+    width: 32px;
+    height: 32px;
+}
+.top-section {
+    background: url(http://cdn01.wideopentech.com/themes/wot-2013-gm/_/img/wot-masthead-dark.jpg) center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+h1, h2, h4 {
+    color: white;
+    font-family: "Oswald";
+    text-transform: uppercase;
+}
+h1 {
+    font-weight: 300;
+    font-size: 3rem;
+}
+h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.3rem;
+    color: white;
+    font-family: "Oswald";
+}
+h3 em {
+    color: #ff803a;
+}
+h3 i {
+    color: #bdd436;
+}
+.hor-bar {
+    color: purple;
+    width: 25px;
+    height: 5px;
+}
+.main-cta {
+    background-color: #bdd436;
+    border: none;
+    padding: 12px;
+    margin: 25px 20px;
+    width: 92%;
+    border-radius: 20px;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* first info section under header*/
+.info-wrapper, .contact-wrapper {
+    width: 100%;
+    background-color: #e9e9e9;
+    padding: 35px 20px ;
+    color: #6A787C;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+svg {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+path {
+    fill: #6A787C;
+}
+h4 {
+    font-family: "Oswald";
+    font-size: 2.5rem;
+    color: #6A787C;
+    font-weight: 300;
+}
+h4 i {
+    color: #bdd436;
+    font-weight: 700;
+}
+.info-wrapper p {
+    line-height: 1.5;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+/* all three white sections under header*/
+.learning-container {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding: 35px 20px 30px;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.learning-container p {
+    font-family: "Open Sans";
+    font-weight: 400; 
+    color: #6A787C;
+    font-size: 1.2rem;
+}
+.arrow-svg {
+    height: 30px;
+    width: 30px;
+}
+/* idea section under header*/
+h5 {
+    color: #bdd436;
+    font-family: "Open Sans";
+    padding: 50px 100px 5px;
+}
+
+/* arrow section under header*/
+.arrow-wrapper i {
+    color: #bdd436
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+
+}
+.contact-wrapper p {
+    font-family: "Helvetica";
+    font-size: 1.3rem;
+    padding: 10px 0 10px 0;
+}
+
+.hot-to-help-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+
+}
+.hot-to-help {
+    width: 90%;
+    background-color: white;
+    margin: 15px auto 0 auto;
+    padding: 15px 20px;
+}
+.hot-to-help p {
+    font-family: "Open Sans";
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.hot-to-help sub {
+    font-family: "Open Sans";
+    font-size: 1rem;
+}
+/* once we reach larger than 750px, apply these new styles*/
+@media(min-width: 750px) {
+    html {
+    font-size: 18px;
+    }
+    h1 {
+        font-size: 8rem;
+    }
+    .main-header {
+        opacity: 50%;
+    }
+    .main-cta {
+        max-width: 325px;
+    }
+}
+
+@media(min-width: 900px) {
+    .ham {
+        display: none;
+    }
+    .main-nav {
+        display: flex;
+        width: 100%;
+    }
+    .info-wrapper p {
+        max-width: 800px;
+    }
+    .learning-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+        .learning-container p {
+        margin: 25px;
+    }
+    .idea-wrapper, .arrow-wrapper {
+        border-right: solid 1px #6A787C; 
+    }
+    .idea-wrapper, .arrow-wrapper, .power-wrapper {
+        max-width: 33.333% 
+    }
+    h5 {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .hot-to-help {
+        width: 300px;
+    }
+    .hot-to-help-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
